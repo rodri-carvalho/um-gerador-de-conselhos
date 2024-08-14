@@ -1,0 +1,69 @@
+body {
+	background-color: var(--background-color);
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+}
+
+.card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 450px;
+	height: 350px;
+	flex-direction: column;
+	background-color: var(--advice-card-color);
+	border-radius: 15px;
+}
+
+.card .advice-number {
+	color: var(--advice-dice-color);
+	margin: 0 0 20px 0;
+	font-size: 1.5rem;
+}
+
+.card .advice-content {
+	color: var(--text-color);
+	font-size: 1.6rem;
+	text-align: center;
+	padding: 4px;
+}
+
+.div-pic img {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+	margin-top: 20px;
+}
+
+.advice-update {
+	background: var(--advice-dice-color);
+	border-radius: 50%;
+	width: 75px;
+	height: 75px;
+	position: absolute;
+	transform: translateY(230%);
+	border: none;
+}
+
+.advice-update:hover {
+	color: var(--text-color);
+	cursor: pointer;
+	box-shadow: 0 5px 15px var(--advice-dice-color);
+}
+
+@media (min-width: 768px) {
+	.advice-content {
+		padding-inline: 50px;
+		width: 386px;
+	}
+	.advice-content p {
+		font-size: 21px;
+		padding: 26px;
+	}
+}
