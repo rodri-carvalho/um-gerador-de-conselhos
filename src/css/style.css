@@ -19,6 +19,8 @@ main {
 	flex-direction: column;
 	background-color: var(--advice-card-color);
 	border-radius: 15px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 .card .advice-number {
@@ -62,8 +64,33 @@ main {
 		padding-inline: 50px;
 		width: 386px;
 	}
+
 	.advice-content p {
 		font-size: 21px;
 		padding: 26px;
+	}
+}
+
+@media (min-width: 415px) {
+	.card {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 400px;
+		height: 350px;
+		flex-direction: column;
+		background-color: var(--advice-card-color);
+		border-radius: 15px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.divider {
+		width: 90%;
+	}
+
+	.div-pic {
+		display: flex;
+		justify-content: center;
 	}
 }
